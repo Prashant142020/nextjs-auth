@@ -1,5 +1,10 @@
 import Navbar from '@/components/Navbar';
+import Provider from '@/components/Provider';
+ 
+import { Toaster } from '@/components/ui/toaster';
 import '@/globals.css';
+ 
+ 
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -18,10 +23,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='flex flex-col items-center justify-center h-screen'>
+       <Provider>
+       <main className='flex flex-col items-center justify-center h-screen'>
           <Navbar />
           {children}
         </main>
+       </Provider>
+        <Toaster />
       </body>
     </html>
   );

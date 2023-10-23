@@ -53,8 +53,9 @@ const SignInForm = () => {
      if (signInData?.error) {
       toast({
         title: " Error",
-        description: " !Opps Something went wrong",
-      })
+        description: " ! Opps Something went wrong",
+        variant: "destructive"
+      }) 
       } else {
         router.refresh();
         router.push('/admin');
