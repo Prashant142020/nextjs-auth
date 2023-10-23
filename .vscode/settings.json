@@ -2,7 +2,12 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[svg]": {
-      "editor.defaultFormatter": "jock.svg"
+    // "[svg]": {
+    //   "editor.defaultFormatter": "jock.svg"
+    // },
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
     }
+
   }
