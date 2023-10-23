@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import Provider from '@/components/Provider';
  
 import { Toaster } from '@/components/ui/toaster';
-import '@/globals.css';
+import './globals.css'
  
  
 import type { Metadata } from 'next';
